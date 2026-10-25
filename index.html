@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>HOLDZ / HALLOWEEN 2026 / Motion Series</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="stage"></div>
+  <nav class="controls">
+    <label>HOLDZ · MOTION POSTERS</label>
+    <select id="selector" aria-label="选择海报">
+      <option value="0">00 / 活动总封面</option>
+      <option value="1">01 / 万圣主题线路</option>
+      <option value="2">02 / 自带搞怪镁粉袋</option>
+      <option value="3">03 / 趣味游戏 · 人人可参与</option>
+    </select>
+    <button id="play">暂停</button>
+  </nav>
+  <!-- GSAP drives the real-time timeline when online; offline playback uses the same renderAt(time) function. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

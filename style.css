@@ -1,0 +1,10 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background:#171717; display:grid; min-height:100vh; place-items:center; overflow-x:hidden; font-family:Inter,Arial,sans-serif; }
+#stage { margin:30px auto 16px; width:min(68vw,650px); box-shadow: 0 24px 90px #0009; }
+#stage svg { width:100%; height:auto; display:block; }
+.controls { display:flex; width:min(95vw,750px); align-items:center; justify-content:center; gap:15px; color:#ddd; margin-bottom:35px; font-size:12px; font-weight:600; letter-spacing:.1em; }
+.controls select, .controls button { background:#272727; border:1px solid #6a6a6a; border-radius:0; color:white; padding:10px; font:inherit; }
+.controls button {cursor:pointer;}
+@media(max-width:850px) { #stage {width:min(94vw,600px)} .controls {flex-wrap:wrap} }
+@media (prefers-reduced-motion:reduce) { .controls {display:none;} }
